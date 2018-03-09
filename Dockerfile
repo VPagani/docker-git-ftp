@@ -6,5 +6,3 @@ RUN cd /tmp &&\
     tag="$(git tag | grep '^[0-9]*\.[0-9]*\.[0-9]*$' | tail -1)" &&\
     git checkout "$tag" &&\
     sudo make install
-
-ENTRYPOINT ["sh"]
