@@ -7,3 +7,5 @@ RUN apk add --update make &&\
     tag="$(git tag | grep '^[0-9]*\.[0-9]*\.[0-9]*$' | tail -1)" &&\
     git checkout "$tag" &&\
     make install
+
+ENTRYPOINT ["sh"]
