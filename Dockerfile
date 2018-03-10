@@ -1,6 +1,6 @@
 FROM alpine/git
 
-RUN apk add --update make bash &&\ 
+RUN apk add --update make bash curl &&\ 
     cd /tmp &&\
     git clone https://github.com/git-ftp/git-ftp.git &&\
     cd git-ftp &&\
