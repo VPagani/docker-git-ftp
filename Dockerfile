@@ -8,4 +8,4 @@ RUN apk add --update make bash &&\
     git checkout "$tag" &&\
     make install
 
-ENTRYPOINT ["sh"]
+ENTRYPOINT ["/bin/sh", "-c"]
